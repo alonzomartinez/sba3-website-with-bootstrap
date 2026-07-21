@@ -1,0 +1,74 @@
+/*  DESIGN SYSTEM VARIABLES */
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --light-gray: hsl(0, 0%, 81%);
+}
+
+/* GLOBAL BODY WORKSPACE */
+body {
+  background-color: var(--light-grayish-blue);
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CUSTOM UTILITIES & CARD MECHANICS */
+.testimonial-card {
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 40px 40px 50px -30px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom Background Implementations */
+.bg-mod-violet { background-color: var(--moderate-violet); }
+.bg-dark-gray-blue { background-color: var(--very-dark-grayish-blue); }
+.bg-dark-black-blue { background-color: var(--very-dark-blackish-blue); }
+
+/* The decorative quotes asset rendering on Daniel's card */
+.card-quotation {
+  background-image: url('./images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top 0 right 15%;
+}
+
+/* AVATAR & TYPOGRAPHY ARCHITECTURE */
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.border-violet-light {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.border-blue-light {
+  border: 2px solid hsl(263, 55%, 62%);
+}
+
+.profile-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.profile-status {
+  font-size: 0.75rem;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.quote-text {
+  font-weight: 500;
+  line-height: 1.4;
+}
